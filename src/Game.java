@@ -18,8 +18,8 @@ public class Game {
     private static Player player;
 
     /* -------- Game Code --------*/
-    private static final String PLAYER_FILE_LOCATION = "src/files/player_data.csv";
-    private static final String INVENTORY_FILE_LOCATION = "src/files/inventory_data.csv";
+    private static final String PLAYER_FILE_LOCATION = "saves/player_data.csv";
+    private static final String INVENTORY_FILE_LOCATION = "saves/inventory_data.csv";
 
     private static final Scanner input = new Scanner(System.in);
     private static final Map<String, Boolean> GAME_STATE = new HashMap<>();
@@ -140,7 +140,7 @@ public class Game {
             System.out.printf("'%s %s' is an invalid command.%n", root, item);
         }
 
-        if(Math.random() < 0.2) {
+        if(Math.random() < 0.1) {
             return fight();
         } else {
             return false;
