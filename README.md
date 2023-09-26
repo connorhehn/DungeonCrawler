@@ -12,3 +12,7 @@ wget https://github.com/connorhehn/DungeonCrawler/releases/download/v1.0.0/Dunge
 ```
 
 Note: In order to be able to access save files, a folder needs to be added directly next to the game titled "saves"
+This can be achieved by running:
+```shell
+mkdir saves
+```
